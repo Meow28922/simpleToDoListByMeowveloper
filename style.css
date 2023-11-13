@@ -141,7 +141,7 @@ body {
     animation-duration: 5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    animation-delay: 3s;
+    animation-delay: 10s;
     animation-iteration-count: 2;
     color: var(--buttonColor);
     font-size: 1.1em;
