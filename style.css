@@ -137,16 +137,19 @@ body {
     bottom: -15%;
     left: 0;
     opacity: 0;
-    animation-name: clickThePaw;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-    animation-delay: 10s;
-    animation-iteration-count: 2;
     color: var(--buttonColor);
     font-size: 1.1em;
     z-index: 80;
     font-weight: bolder;
+}
+
+.myAnimation {
+    animation-name: clickThePaw;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
 }
 
 @keyframes clickThePaw {
@@ -340,6 +343,7 @@ body {
     background-color: var(--navColor);
 }
 
+
 @media (max-width: 500px) {
     #container>section:first-child>form>button {
         width: 60%;
@@ -363,4 +367,4 @@ body {
         width: 100%;
     }
 
-}
+}   
