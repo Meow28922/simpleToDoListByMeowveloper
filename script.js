@@ -36,6 +36,7 @@ d('#alertOk')[0].addEventListener('click', () => {
     d("#alertContainer")[0].style.top = '-100%';
     const clicked = 'Alert message showed.';
     localStorage.setItem('clicked', clicked);
+    d('#container>section:first-child>form>button>span')[0].classList.add('myAnimation');
 }); 
 
 d('#list-form')[0].addEventListener('submit', (event) => {
