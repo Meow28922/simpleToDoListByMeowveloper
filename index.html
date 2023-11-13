@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Simple To Do List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="alertContainer">
+        <div id="alertBox">
+            <h3>For Your Information</h3>
+            <div>
+                This web application uses local storage your browser for storing data of your tasks so you won't need an account.
+            </div>
+
+            <div>
+                Please Remember to use the <span>SAME BROWSER</span> of the <span>SAME DEVICE</span> to see the tasks you add before.
+            </div>
+
+            <div><small style="color: var(--deleteColor);">This message won't show again.</small></div>
+
+            <button id="alertOk">OK</button>
+        </div>
+    </div>
+    <section id="nav">
+        <ul>
+            <li>
+                <a href="#formContainer"><div>Add Tasks</div></a>
+            </li>
+            <li>
+                <a href="#tasksContainer"><div>Your Tasks</div></a>
+            </li>
+        </ul>
+    </section>
+    <div id="container">
+        <section id="formContainer">
+            <form id="list-form">
+                <h2>To Do List</h2>
+                <input type="text" id="taskName" placeholder="Enter Task Here">
+                <div class="line"></div>
+                <p>Choose a Date</p>
+                <input type="date" id="taskDate">
+                <div class="line"></div>
+                <button type="submit" id="addBtn">
+                    <span>Click the Paw to Add Tasks</span>
+                    <img src="./img/notext_rmBG.png" alt="">
+                </button>
+            </form>
+        </section>
+        <section id="tasksContainer">
+            <div class="list">
+                <div>1.</div>
+                <div data-index="1">Do Dishes</div>
+                <div>12/7/2023</div>
+                <div>
+                    <button>Complete</button>
+                </div>
+                <div>
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="popUp valid">
+        Your task has been added to the list.
+    </div>
+    <div class="popUp">
+        The fields cannot be empty!!!!
+    </div>
+</body>
+<script src="./DOM/DOM.js"></script>
+<script src="./model/tasks.js"></script>
+<script src="./script.js"></script>
+</html>
